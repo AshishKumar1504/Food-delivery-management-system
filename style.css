@@ -1,0 +1,94 @@
+/* General Page Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #e7eae6;
+}
+
+/* Header */
+header {
+  background: #6c2e2e;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Menu and Cart boxes */
+.menu, .cart {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Section headings */
+h2 {
+  margin-top: 0;
+  color: #653131;
+}
+
+/* Food menu item */
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.item button {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.item button:hover {
+  background: #0579b4;
+}
+
+/* Cart items */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+/* Checkout form */
+.checkout {
+  margin-top: 20px;
+}
+
+.checkout input, .checkout select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #8ba911;
+  border-radius: 4px;
+}
+
+.checkout button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background: #45a049;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Delivery Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>🍔 Food Delivery Management System</header>
+  <div class="container">
+    <!-- Menu Section -->
+    <div class="menu">
+      <h2>Menu</h2>
+      <div class="item">
+        <span>Burger - ₹120</span>
+        <button onclick="addToCart('Burger', 120)">Add</button>
+      </div>
+      <div class="item">
+        <span>Pizza - ₹250</span>
+        <button onclick="addToCart('Pizza', 250)">Add</button>
+      </div>
+      <div class="item">
+        <span>Pasta - ₹180</span>
+        <button onclick="addToCart('Pasta', 180)">Add</button>
+      </div>
+      <div class="item">
+        <span>Sandwich - ₹90</span>
+        <button onclick="addToCart('Sandwich', 90)">Add</button>
+      </div>
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart">
+      <h2>Cart</h2>
+      <div id="cartItems"></div>
+      <h3>Total: ₹<span id="total">0</span></h3>
+
+      <div class="checkout">
+        <h3>Checkout</h3>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="text" id="address" placeholder="Delivery Address" required>
+        <select id="payment">
+          <option value="">Select Payment Method</option>
+          <option value="COD">Cash on Delivery</option>
+          <option value="Card">Credit/Debit Card</option>
+          <option value="UPI">UPI</option>
+        </select>
+        <button onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
